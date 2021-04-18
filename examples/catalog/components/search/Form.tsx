@@ -19,6 +19,7 @@ const Form: React.FC = () => {
     router.push({
       pathname: '/search',
       query: { q, sort },
+      locale: router.locale,
     });
   };
 

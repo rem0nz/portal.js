@@ -1,1 +1,5 @@
 @import './tailwind.css';
+
+html[lang="ar"] {
+  direction: rtl;
+}
