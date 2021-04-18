@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 
 const Form: React.FC = () => {
   const router = useRouter();
-  const [q, setQ] = useState(router.query.q);
-  const [sort, setSort] = useState(router.query.sort);
+  const [q, setQ] = useState(router.query.q ?? '');
+  const [sort, setSort] = useState(router.query.sort ?? '');
 
   const handleChange = (event) => {
     if (event.target.name === 'q') {
@@ -16,11 +16,16 @@ const Form: React.FC = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    router.push({
-      pathname: '/search',
-      query: { q, sort },
-      locale: router.locale,
-    });
+    console.log({ q, sort, locale: router.locale });
+    router.push(
+      {
+        pathname: 'search',
+        query: { q, sort },
+      },
+      {
+        pathname: 'search',
+      }
+    );
   };
 
   return (
