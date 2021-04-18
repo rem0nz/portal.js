@@ -19,7 +19,7 @@ const Search: React.FC<Props> = ({ variables }) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Nav />
-    <main className="p-6">
+    <main className="p-6 search-page">
       <Form />
       <Total variables={variables} />
       <List variables={variables} />

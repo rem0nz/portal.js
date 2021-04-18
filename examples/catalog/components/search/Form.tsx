@@ -47,7 +47,7 @@ const Form: React.FC = () => {
           Search
         </button>
       </div>
-      <div className="inline-block my-6 float-right">
+      <div className="inline-block my-6 order-field">
         <label htmlFor="field-order-by">Order by:</label>
         <select
           className="bg-white"

@@ -1,5 +1,13 @@
 @import './tailwind.css';
 
-html[lang="ar"] {
+html[lang='ar'] {
   direction: rtl;
+}
+
+.search-page .order-field {
+  float: right;
+}
+
+html[lang='ar'] .search-page .order-field {
+  float: left;
 }
