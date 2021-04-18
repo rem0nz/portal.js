@@ -7,25 +7,29 @@ import Form from '../components/search/Form';
 import Total from '../components/search/Total';
 import List from '../components/search/List';
 import { SEARCH_QUERY } from '../graphql/queries';
+import { loadNamespaces } from './_app';
+import useTranslation from 'next-translate/useTranslation';
 
-type Props = {
-  variables: any;
+const Search: React.FC<{ variables: any }> = ({ variables }) => {
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <Head>
+        <title>
+          {t(`common:Portal`)} | {t(`common:Search`)}
+        </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Nav />
+      <main className="p-6 search-page">
+        <Form />
+        <Total variables={variables} />
+        <List variables={variables} />
+      </main>
+    </>
+  );
 };
-
-const Search: React.FC<Props> = ({ variables }) => (
-  <>
-    <Head>
-      <title>Portal | Search</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Nav />
-    <main className="p-6 search-page">
-      <Form />
-      <Total variables={variables} />
-      <List variables={variables} />
-    </main>
-  </>
-);
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const query = context.query || {};
@@ -41,6 +45,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       initialApolloState: apolloClient.cache.extract(),
+      _ns: await loadNamespaces(['common'], context.locale),
       variables,
     },
   };

@@ -1,4 +1,22 @@
 {
   "title": "Portal in English",
-  "description": "At Datahub, we have over thousands of datasets for free and a Premium Data Service for additional or customised data with guaranteed updates."
+  "description": "At Datahub, we have over thousands of datasets for free and a Premium Data Service for additional or customised data with guaranteed updates.",
+  "Find, Share and Publish": "Find, Share and Publish",
+  "Quality Data with": "Quality Data with",
+  "Datahub": "Datahub",
+  "Search": "Search",
+  "Order by": "Order by",
+  "Relevance": "Relevance",
+  "Name Ascending": "Name Ascending",
+  "Name Descending": "Name Descending",
+  "Last Modified": "Last Modified",
+  "Popular": "Popular",
+  "Recent Datasets":"Recent Datasets",
+  "View Dataset": "View Dataset",
+  "Error loading search results": "Error loading search results",
+  "results found": "results found",
+  "Loading": "Loading",
+
+  "DataSet Title": "DataSet Title",
+  "testdataset": "testdataset"
 }

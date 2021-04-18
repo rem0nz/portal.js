@@ -25,8 +25,9 @@ const Home: React.FC<{ locale: any; locales: any }> = ({
         <section className="flex justify-center items-center flex-col mt-8 mx-4 lg:flex-row">
           <div>
             <h1 className="text-4xl mb-3 font-thin">
-              Find, Share and Publish <br /> Quality Data with{' '}
-              <span className="text-orange-500">Datahub</span>
+              {t(`common:Find, Share and Publish`)} <br />{' '}
+              {t(`common:Quality Data with`)}{' '}
+              <span className="text-orange-500">{t(`common:Datahub`)}</span>
             </h1>
             <p className="text-md font-light mb-3 w-4/5">
               {t(`common:description`)}
