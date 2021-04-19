@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 const Item: React.FC<{ datapackage: any }> = ({ datapackage }) => {
+  const { t } = useTranslation();
   return (
     <div className="mb-6">
       <h3 className="text-xl font-semibold">
@@ -13,7 +15,10 @@ const Item: React.FC<{ datapackage: any }> = ({ datapackage }) => {
           }/${datapackage.name}`}
         >
           <a className="text-primary">
-            {datapackage.title || datapackage.name}
+            {t(`common:${datapackage.title || datapackage.name}`, undefined, {
+              returnObjects: false,
+              fallback: datapackage.title || datapackage.name,
+            })}
           </a>
         </Link>
       </h3>
@@ -24,12 +29,17 @@ const Item: React.FC<{ datapackage: any }> = ({ datapackage }) => {
       >
         <a className="text-gray-500 block mt-1">
           {datapackage.organization
-            ? datapackage.organization.title
-            : 'dataset'}
+            ? t(`common:${datapackage.organization.name}`, undefined, {
+                returnObjects: false,
+                fallback: datapackage.organization.name,
+              })
+            : t(`common:dataset`)}
         </a>
       </Link>
       <div className="leading-relaxed mt-2">
-        {datapackage.description || datapackage.notes}
+        {datapackage.description ||
+          (datapackage.notes &&
+            t(`common:${datapackage.description || datapackage.notes}`))}
       </div>
     </div>
   );

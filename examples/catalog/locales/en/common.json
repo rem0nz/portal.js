@@ -1,4 +1,5 @@
 {
+  "Portal": "Portal",
   "title": "Portal in English",
   "description": "At Datahub, we have over thousands of datasets for free and a Premium Data Service for additional or customised data with guaranteed updates.",
   "Find, Share and Publish": "Find, Share and Publish",
@@ -16,7 +17,23 @@
   "Error loading search results": "Error loading search results",
   "results found": "results found",
   "Loading": "Loading",
+  "Title": "Title",
+  "Name": "Name",
+  "Description": "Description",
+  "Download": "Download",
+  "Source": "Source",
+  "License": "License",
+  "Updated": "Updated",
+  "Created": "Created",
+  "Format": "Format",
+  "Size": "Size",
+  "Files": "Files",
+  "File": "File",
+  "Link": "Link",
+  "Data Files": "Data Files",
 
   "DataSet Title": "DataSet Title",
-  "testdataset": "testdataset"
+  "testdataset": "testdataset",
+  "A DataSet description": "A DataSet description",
+  "testorg_description": "testorg_description"
 }

@@ -2,6 +2,7 @@
 import { useQuery } from '@apollo/react-hooks';
 import { Table, ErrorMessage } from '../_shared';
 import { GET_RESOURCES_QUERY } from '../../graphql/queries';
+import useTranslation from 'next-translate/useTranslation';
 
 const columns = [
   {
@@ -48,6 +49,7 @@ const columns = [
 ];
 
 const About: React.FC<{ variables: any }> = ({ variables }) => {
+  const { t } = useTranslation();
   const { loading, error, data } = useQuery(GET_RESOURCES_QUERY, {
     variables,
     // Setting this value to true will make the component rerender when
@@ -56,8 +58,9 @@ const About: React.FC<{ variables: any }> = ({ variables }) => {
     notifyOnNetworkStatusChange: true,
   });
 
-  if (error) return <ErrorMessage message="Error loading dataset." />;
-  if (loading) return <div>Loading</div>;
+  if (error)
+    return <ErrorMessage message={t(`common:Error loading dataset`)} />;
+  if (loading) return <div>{t(`common:Loading`)}</div>;
 
   const { result } = data.dataset;
   const resource = result.resources.find(

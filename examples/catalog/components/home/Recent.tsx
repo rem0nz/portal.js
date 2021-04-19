@@ -35,13 +35,22 @@ const Recent: React.FC = () => {
             className="border px-4 mb-4 mr-3 border-gray-100 w-5/6 shadow-sm"
           >
             <h1 className="text-2xl font-thin">
-              {t(`common:${dataset.title}`)}
+              {t(`common:${dataset.title}`, undefined, {
+                returnObjects: false,
+                fallback: dataset.title,
+              })}
             </h1>
             <p className="text-gray-500">
               {t(
                 `common:${
                   dataset.organization && dataset.organization.description
-                }`
+                }`,
+                undefined,
+                {
+                  returnObjects: false,
+                  fallback:
+                    dataset.organization && dataset.organization.description,
+                }
               )}
             </p>
             <Link

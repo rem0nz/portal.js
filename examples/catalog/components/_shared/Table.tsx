@@ -1,3 +1,5 @@
+import useTranslation from 'next-translate/useTranslation';
+
 interface TableProps {
   columns: Array<any>;
   data: Array<any>;
@@ -5,13 +7,18 @@ interface TableProps {
 }
 
 const Table: React.FC<TableProps> = ({ columns, data, className }) => {
+  const { t } = useTranslation();
+
   return (
     <table className={`table-auto w-full text-sm text-left my-6 ${className}`}>
       <thead>
         <tr>
           {columns.map(({ key, name }) => (
             <th key={key} className="px-4 py-2">
-              {name}
+              {t(`common:${name}`, undefined, {
+                returnObjects: false,
+                fallback: name,
+              })}
             </th>
           ))}
         </tr>

@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { useQuery } from '@apollo/react-hooks';
 import { ErrorMessage } from '../_shared';
 import { GET_ORG_QUERY } from '../../graphql/queries';
+import useTranslation from 'next-translate/useTranslation';
 
 const Org: React.FC<{ variables: any }> = ({ variables }) => {
+  const { t } = useTranslation();
   const { loading, error, data } = useQuery(GET_ORG_QUERY, {
     variables,
     // Setting this value to true will make the component rerender when
@@ -12,8 +14,9 @@ const Org: React.FC<{ variables: any }> = ({ variables }) => {
     notifyOnNetworkStatusChange: true,
   });
 
-  if (error) return <ErrorMessage message="Error loading dataset." />;
-  if (loading) return <div>Loading</div>;
+  if (error)
+    return <ErrorMessage message={t(`common:Error loading dataset`)} />;
+  if (loading) return <div>{t(`common:Loading`)}</div>;
 
   const { organization } = data.dataset.result;
   return (
@@ -31,7 +34,14 @@ const Org: React.FC<{ variables: any }> = ({ variables }) => {
           <Link href={`/@${organization.name}`}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="font-semibold text-primary underline">
-              {organization.title || organization.name}
+              {t(
+                `common:${organization.title || organization.name}`,
+                undefined,
+                {
+                  returnObjects: false,
+                  fallback: organization.title || organization.name,
+                }
+              )}
             </a>
           </Link>
         </>

@@ -1,4 +1,5 @@
 {
+    "Portal": "منفذ",
     "title": "باللغة العربية",
     "description": "مرحبا بكم في موقع بيانات",
     "Find, Share and Publish": "البحث والمشاركة والنشر",
@@ -16,7 +17,25 @@
     "Error loading search results": "خطأ في تحميل نتائج البحث",
     "results found": "العثور على نتائج",
     "Loading": "جار التحميل",
+    "Title": "لقب",
+    "Name": "اسم",
+    "Description": "وصف",
+    "Download": "تحميل",
+    "Source": "مصدر",
+    "License": "رخصة",
+    "Updated": "محدث",
+    "Created": "خلقت",
+    "Format": "صيغة",
+    "Size": "بحجم",
+    "Files": "الملفات",
+    "File": "ملف",
+    "Link": "حلقة الوصل",
+    "Data Files": "ملفات البيانات",
 
     "DataSet Title": "العربية",
-    "testdataset": "العربية"
+    "testorg": "تنظيم الاختبار",
+    "dataset-title": "عنوان مجموعة البيانات",
+    "testdataset": "العربية",
+    "A DataSet description": "وصف البيانات",
+    "testorg_description": "وصف البيانات"
   }
