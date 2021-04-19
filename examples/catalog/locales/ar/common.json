@@ -32,10 +32,22 @@
     "Link": "حلقة الوصل",
     "Data Files": "ملفات البيانات",
 
-    "DataSet Title": "العربية",
-    "testorg": "تنظيم الاختبار",
-    "dataset-title": "عنوان مجموعة البيانات",
-    "testdataset": "العربية",
-    "A DataSet description": "وصف البيانات",
-    "testorg_description": "وصف البيانات"
+    "federal-authority-for-identity": "federal-authority-for-identity",
+    "Federal Authority For Identity": "Federal Authority For Identity",
+    "ministry-of-health-and-prevention": "ministry-of-health-and-prevention",
+    "Ministry of Health and Prevention": "Ministry of Health and Prevention",
+    "higher-colleges-of-technology": "higher-colleges-of-technology",
+    "Higher Colleges of Technology": "Higher Colleges of Technology",
+    "ministry-of-climate-change-environment": "ministry-of-climate-change-environment",
+    "Ministry Of Climate Change & Environment": "Ministry Of Climate Change & Environment",
+
+    "Statistics of Establishment Card Services": "Statistics of Establishment Card Services",
+    "Number of ID Cards Delivered to Customers per Year": "Number of ID Cards Delivered to Customers per Year",
+    "Number of beds and hospitals by health sector": "Number of beds and hospitals by health sector",
+    "18-19 NEW STUDENT ENROLLMENTS BY HIGH SCHOOL": "Ministry of Health and Prevention",
+    "Mangrove Sites Coordinates 2015 (DS)": "Mangrove Sites Coordinates 2015 (DS)",
+    "Estimation Of Fish Quantities by emirate and method": "Estimation Of Fish Quantities by emirate and method",
+    "Birth Counts by gender, marital status, nationality group and emirate": "Birth Counts by gender, marital status, nationality group and emirate",
+    "NEW STUDENT ENROLLMENTS BY HIGH SCHOOL TYPE AND GENDER": "NEW STUDENT ENROLLMENTS BY HIGH SCHOOL TYPE AND GENDER",
+    "Five most common cancers by gender in UAE": "Five most common cancers by gender in UAE"
   }
