@@ -29,9 +29,9 @@ const Item: React.FC<{ datapackage: any }> = ({ datapackage }) => {
       >
         <a className="text-gray-500 block mt-1">
           {datapackage.organization
-            ? t(`common:${datapackage.organization.name}`, undefined, {
+            ? t(`common:${datapackage.organization.title}`, undefined, {
                 returnObjects: false,
-                fallback: datapackage.organization.name,
+                fallback: datapackage.organization.title,
               })
             : t(`common:dataset`)}
         </a>
