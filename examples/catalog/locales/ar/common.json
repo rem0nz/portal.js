@@ -1,12 +1,12 @@
 {
   "Portal": "منفذ",
-  "title": "باللغة العربية",
-  "description": "مرحبا بكم في موقع بيانات",
+  "title": "عنوان",
+  "description": "الوصف",
   "Find, Share and Publish": "البحث والمشاركة والنشر",
   "Quality Data with": "جودة البيانات مع",
   "Search": "يبحث",
   "Order by": "ترتيب حسب",
-  "Relevance": "ملاءمة",
+  "Relevance": "موضوعات ذات الصلة",
   "Name Ascending": "الاسم تصاعديا",
   "Name Descending": "الاسم تنازليًا",
   "Last Modified": "آخر تعديل",
@@ -23,7 +23,7 @@
   "Source": "مصدر",
   "License": "رخصة",
   "Updated": "محدث",
-  "Created": "خلقت",
+  "Created": "نشات",
   "Format": "صيغة",
   "Size": "بحجم",
   "Files": "الملفات",
@@ -31,16 +31,17 @@
   "Link": "حلقة الوصل",
   "Data Files": "ملفات البيانات",
 
-  "Ministry of Health and Prevention": "Ministry of Health and Prevention",
-  "Higher Colleges of Technology": "Higher Colleges of Technology",
-  "Ministry Of Climate Change & Environment": "Ministry Of Climate Change & Environment",
-  "Federal Authority For Identity and Citizenship": "Federal Authority For Identity and Citizenship",
+  "Ministry of Health and Prevention": "وزارة الصحة ووقاية المجتمع",
+  "Higher Colleges of Technology": "كليات التقنية العليا",
+  "Ministry Of Climate Change & Environment": "وزارة التغيير المناخى والبيئة",
+  "Federal Authority For Identity and Citizenship": "الهيئة الاتحادية للهوية and Citizenship",
 
-  "NEW STUDENT ENROLLMENTS BY HIGH SCHOOL TYPE AND GENDER 2018 2019": "NEW STUDENT ENROLLMENTS BY HIGH SCHOOL TYPE AND GENDER 2018 2019",
-  "Mangrove Sites Coordinates": "Mangrove Sites Coordinates",
-  "Estimation Of Fish Quantities by emirate and method": "Estimation Of Fish Quantities by emirate and method",
-  "Number of ID Cards Delivered to Customers per Year": "Number of ID Cards Delivered to Customers per Year",
-  "Five most common cancers by gender in UAE": "Five most common cancers by gender in UAE",
+  "Estimation Of Fish Quantities by emirate and method": "تقدير كميات الاسماك حسب الامارة وطريقة الصيد",
+  "Five most common cancers by gender in UAE": "خمسة أنواع من السرطانات الأكثر شيوعًا حسب الجنس في الإمارات العربية المتحدة",
+  "Birth Counts by gender, marital status, nationality group and emirate": "عدد المواليد حسب الجنس والحالة الاجتماعية والجنسية والامارة",
+  "Number of ID Cards Delivered to Customers per Year": "عدد بطاقات الهوية المسلمة للعملاء سنويا",
+
+  "NEW STUDENT ENROLLMENTS BY HIGH SCHOOL TYPE AND GENDER 2018 2019": "التحاق الطلاب الجدد حسب نوع المدرسة والجنس 2018 2019",
   "Number of beds and hospitals by health sector": "Number of beds and hospitals by health sector",
-  "Birth Counts by gender, marital status, nationality group and emirate": "Birth Counts by gender, marital status, nationality group and emirate"
+  "Mangrove Sites Coordinates": "حداثيات مواقع المانغروف حسب الامارة"
 }
